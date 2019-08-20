@@ -1,5 +1,5 @@
 alias please="sudo"
-alias doco="docker-compose"
+alias dco="docker-compose"
 
 set -x MINIKUBE_IN_STYLE true
 set -g theme_newline_cursor yes
