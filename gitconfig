@@ -8,6 +8,7 @@ co = checkout
 c = commit -m
 s = status
 a = add
+ap = add -p
 poh = push origin HEAD
 df = diff
 dfs = diff --staged
