@@ -1,6 +1,7 @@
 # Inlude file by adding this to ~/.gitconfig
 #[include]
 #        path = /path/to/repo/gitconfig
+
 [alias]
 
 fco = "!sh -c 'git fetch ${1:-origin} ; git checkout $0'"
@@ -9,7 +10,7 @@ c = commit -m
 s = status
 a = add
 ap = add -p
-poh = push origin HEAD
+poh = push -u origin HEAD
 df = diff
 dfs = diff --staged
 fo = fetch origin
@@ -21,3 +22,21 @@ mycommits = !git commits --author=\"$(git config user.name)\"
 
 alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1 => \\2/' | awk 'BEGIN { FS = \"=>\" }{ printf(\"%-20s=>%s\\n\", $1,$2)}' | sort
 alias-update = !sh -c 'git --git-dir=$(dirname $(git config --list | grep include\\\\.path= | head -1 | cut -c 14-))/.git --work-tree=$(dirname $(git config --list | grep include\\\\.path= | head -1 | cut -c 14-)) pull'
+
+[mergetool "goland"]
+        cmd = /home/mpludowski/.local/share/JetBrains/Toolbox/apps/Goland/ch-0/202.7319.61/bin/goland.sh merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+        trustExitCode = false
+
+
+[difftool "goland"]
+        cmd = /home/mpludowski/.local/share/JetBrains/Toolbox/apps/Goland/ch-0/202.7319.61/bin/goland.sh diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+        trustExitCode = false
+
+[mergetool "phpstorm"]
+        cmd = phpstorm merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+        trustExitCode = false
+
+
+[difftool "phpstorm"]
+        cmd = /Users/pludowski/Applications/JetBrains\\ Toolbox/PhpStorm.app/Contents/MacOS/jetbrains-toolbox-launcher diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+        trustExitCode = false
