@@ -78,15 +78,17 @@ button:hover {
 #backlight,
 #network,
 #pulseaudio,
-#wireplumber,
 #custom-media,
 #tray,
 #mode,
+#keyboard-state,
+#custom-uptime,
 #custom-notification,
-#custom-power,
-#mpd {
+#custom-power {
     padding: 1px 5px;
     color: #ffffff;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.85);
 }
 
 /* If workspaces is the leftmost module, omit left margin */
