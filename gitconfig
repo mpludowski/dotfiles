@@ -40,3 +40,5 @@ alias-update = !sh -c 'git --git-dir=$(dirname $(git config --list | grep includ
 [difftool "phpstorm"]
         cmd = /Users/pludowski/Applications/JetBrains\\ Toolbox/PhpStorm.app/Contents/MacOS/jetbrains-toolbox-launcher diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
         trustExitCode = false
+[init]
+	defaultBranch = main
