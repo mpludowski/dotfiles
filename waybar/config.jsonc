@@ -10,13 +10,13 @@
 		"cpu",
 		"memory",
 		"temperature",
-		"hyprland/workspaces"
+		"hyprland/workspaces",
+		"custom/uptime",
 	],
 	"modules-center": [
 		"hyprland/window"
 	],
 	"modules-right": [
-		"custom/uptime",
         	"pulseaudio",
         	"network",
         	"keyboard-state",
