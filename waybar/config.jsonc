@@ -4,14 +4,14 @@
 	"position": "top",
 	"output": "eDP-1",
 	"include": [
-		"~/.config/waybar/bar.jsonc",
+		"~/.config/waybar/bar.jsonc"
 	],    
 	"modules-left": [
 		"cpu",
 		"memory",
 		"temperature",
 		"hyprland/workspaces",
-		"custom/uptime",
+		"custom/uptime"
 	],
 	"modules-center": [
 		"hyprland/window"
@@ -19,7 +19,6 @@
 	"modules-right": [
         	"pulseaudio",
         	"network",
-        	"keyboard-state",
         	"battery",
         	"clock",
         	"tray",
@@ -32,7 +31,7 @@
 	"position": "top",
 	"output": "!eDP-1",
 	"include": [
-		"~/.config/waybar/bar.jsonc",
+		"~/.config/waybar/bar.jsonc"
 	],
 	"modules-left": [
 		"hyprland/workspaces"
