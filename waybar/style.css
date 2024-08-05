@@ -74,10 +74,15 @@ button {
 #custom-uptime,
 #custom-notification,
 #custom-power {
-    padding: 1px 5px;
+    padding: 2px 5px;
     color: #ffffff;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.85);
+}
+
+#clock,
+#custom-power {
+    padding-top: 3px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
