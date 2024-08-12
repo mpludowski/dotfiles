@@ -4,7 +4,7 @@ alias dff="kitty +kitten diff"
 
 set -x MINIKUBE_IN_STYLE true
 set -g theme_newline_cursor yes
-set PATH ~/go/bin $PATH
+set PATH ~/go/bin ~/.local/share/JetBrains/Toolbox/scripts $PATH
 set SHELL (which fish)
 
 function dr
