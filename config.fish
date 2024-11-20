@@ -7,6 +7,8 @@ set -g theme_newline_cursor yes
 set PATH ~/go/bin ~/.local/share/JetBrains/Toolbox/scripts $PATH
 set SHELL (which fish)
 
+set -x TESTARGS ""
+
 function dr
     docker run --rm -it -v (pwd):/app -w /app $argv
 end
