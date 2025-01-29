@@ -24,7 +24,25 @@
     "clock": {
 	"interval": 1,
 	"format": "{:%a %d-%m-%Y %H:%M:%S}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	"calendar": {
+            "weeks-pos": "none",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#8fbcbb'><b>{}</b></span>",
+                "days": "<span color='#8a909e'>{}</span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#81a1c1'><b>{}</b></span>",
+                "today": "<span color='#88c0d0'><b>{}</b></span>"
+            }
+        },
+        "actions":  {
+            "on-click-right": "none",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
     "cpu": {
         "format": "{usage}% ",
@@ -96,6 +114,7 @@
 	"persistent-workspaces": {
 	    // "eDP-1": [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
 	    // "DP-1": [ 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
+	    "DP-2": [ 1, 2 ]
 	}
     },
     "hyprland/window": {

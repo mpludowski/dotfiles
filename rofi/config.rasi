@@ -1,2 +1,9 @@
+/*configuration {
+	modi: "drun,window,calc,combi";
+	combi-modi: "drun,window,calc";
+}
+@theme "solarized"
+*/
 
 @theme "~/.config/rofi/rounded.rasi"
+
