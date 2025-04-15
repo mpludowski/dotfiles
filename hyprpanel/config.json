@@ -190,7 +190,7 @@
   "bar.customModules.updates.pollingInterval": 1440000,
   "theme.bar.scaling": 80,
   "bar.layouts": {
-    "*": {
+    "0": {
       "left": [
         "windowtitle"
       ],
@@ -207,7 +207,9 @@
         "notifications",
         "dashboard"
       ]
-    }
+    },
+    "1": {"left":[],"middle":[],"right":[]},
+    "2": {"left":[],"middle":[],"right":[]}
   },
   "theme.bar.location": "top",
   "bar.autoHide": "never",
@@ -246,7 +248,7 @@
   "menus.dashboard.directories.enabled": false,
   "bar.launcher.autoDetectIcon": false,
   "theme.bar.buttons.dashboard.enableBorder": false,
-  "bar.workspaces.monitorSpecific": true,
+  "bar.workspaces.monitorSpecific": false,
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.workspaces.show_icons": false,
   "bar.workspaces.show_numbered": false,
@@ -291,7 +293,7 @@
     "class:Postman": ""
   },
   "menus.clock.weather.key": "todo",
-  "menus.clock.weather.interval": 1000000,
+  "menus.clock.weather.interval": 60000,
   "menus.volume.raiseMaximumVolume": false,
   "theme.osd.enable": true,
   "theme.bar.buttons.monochrome": true,
